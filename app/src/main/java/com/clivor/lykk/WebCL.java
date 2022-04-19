@@ -7,7 +7,6 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.util.Base64;
 import android.util.Log;
-import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
@@ -52,12 +51,12 @@ public class WebCL extends WebView {
         this.setWebViewClient(new WeCl());
         this.setWebChromeClient(new WeCCL());
     }
-    public static boolean urlstatus = false;
-    public static ValueCallback<Uri> fdfdf;
-    public static Uri dsds = null;
-    public static ValueCallback<Uri[]> oijjccs;
-    public static String shda;
-    public static final int icshOCS = 1;
+
+    public static ValueCallback<Uri> sda;
+    public static Uri cacv = null;
+    public static ValueCallback<Uri[]> vds;
+    public static String cabf;
+    public static final int uhsd = 1;
 
     class WeCl extends WebViewClient {
         @Override
@@ -78,10 +77,10 @@ public class WebCL extends WebView {
         public boolean onShowFileChooser(WebView view,
                                          ValueCallback<Uri[]> filePath,
                                          FileChooserParams fileChooserParams) {
-            if (oijjccs != null) {
-                oijjccs.onReceiveValue(null);
+            if (vds != null) {
+                vds.onReceiveValue(null);
             }
-            oijjccs = filePath;
+            vds = filePath;
             Intent contentSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
             contentSelectionIntent.addCategory(Intent.CATEGORY_OPENABLE);
             contentSelectionIntent.setType("*/*");

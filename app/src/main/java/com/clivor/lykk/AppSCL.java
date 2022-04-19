@@ -13,14 +13,14 @@ import java.util.Map;
 
 public class AppSCL {
 
-    public static String UCSHS;
-    public static String ihhds = "-";
-    public static String nnhda;
-    public static String bbfkd;
-    public static String jcsgaj = "QUZpUVpGY2N3VzNBQTk0NmhWMjQ4WQ==";
-    public static String usbda;
-    public static String jjdsa;
-    public static String uutahs;
+    public static String dudhs;
+    public static String ndjs = "-";
+    public static String njdjs;
+    public static String njsya;
+    public static String vvsa = "QUZpUVpGY2N3VzNBQTk0NmhWMjQ4WQ==";
+    public static String bbbc;
+    public static String vas;
+    public static String nngf;
 
     public static void appSl(CL cl) {
 
@@ -28,8 +28,8 @@ public class AppSCL {
             @Override
             public void run() {
                 try {
-                    nnhda = AdvertisingIdClient.getAdvertisingIdInfo(cl.getApplicationContext()).getId();
-                    Log.d("weq", nnhda);
+                    njdjs = AdvertisingIdClient.getAdvertisingIdInfo(cl.getApplicationContext()).getId();
+                    Log.d("weq", njdjs);
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (GooglePlayServicesNotAvailableException e) {
@@ -40,35 +40,36 @@ public class AppSCL {
             }
         }).start();
 
-        UCSHS = AppsFlyerLib.getInstance().getAppsFlyerUID(cl.getApplicationContext());
-        Log.d("weq", UCSHS);
+        dudhs = AppsFlyerLib.getInstance().getAppsFlyerUID(cl.getApplicationContext());
+        Log.d("weq", dudhs);
 
-        AppsFlyerLib.getInstance().init(WebCL.docodCL(jcsgaj), new AppsFlyerConversionListener() {
+        AppsFlyerLib.getInstance().init(WebCL.docodCL(vvsa), new AppsFlyerConversionListener() {
             @Override
             public void onConversionDataSuccess(Map<String, Object> map) {
-                ihhds = map.get(WebCL.docodCL("YWZfc3RhdHVz")).toString();
+                ndjs = map.get(WebCL.docodCL("YWZfc3RhdHVz")).toString();
+                Log.d("rrrr", ndjs + "");
 
-                if (ihhds.equals(WebCL.docodCL("Tm9uLW9yZ2FuaWM="))) {
+                if (ndjs.equals(WebCL.docodCL("Tm9uLW9yZ2FuaWM="))) {
 
                     try {
-                        usbda = map.get(WebCL.docodCL("Y2FtcGFpZ24=")).toString();
+                        bbbc = map.get(WebCL.docodCL("Y2FtcGFpZ24=")).toString();
                     } catch (Exception e) {
 
                     }
 
                     try {
-                        jjdsa = map.get(WebCL.docodCL("bWVkaWFfc291cmNl")).toString();
+                        vas = map.get(WebCL.docodCL("bWVkaWFfc291cmNl")).toString();
                     } catch (Exception e) {
 
                     }
 
                     try {
-                        uutahs = map.get(WebCL.docodCL("YWZfY2hhbm5lbA==")).toString();
+                        nngf = map.get(WebCL.docodCL("YWZfY2hhbm5lbA==")).toString();
                     } catch (Exception e) {
 
                     }
 
-                    bbfkd = Cllll.parseCL(usbda);
+                    njsya = Cllll.parseCL(bbbc);
 
                 }
 

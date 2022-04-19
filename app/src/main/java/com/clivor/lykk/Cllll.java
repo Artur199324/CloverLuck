@@ -1,15 +1,14 @@
 package com.clivor.lykk;
 
-import static com.clivor.lykk.AppSCL.UCSHS;
-import static com.clivor.lykk.AppSCL.jcsgaj;
-import static com.clivor.lykk.AppSCL.jjdsa;
-import static com.clivor.lykk.AppSCL.nnhda;
-import static com.clivor.lykk.AppSCL.usbda;
-import static com.clivor.lykk.AppSCL.uutahs;
-import static com.clivor.lykk.CL.pac;
+import static com.clivor.lykk.AppSCL.dudhs;
+import static com.clivor.lykk.AppSCL.vvsa;
+import static com.clivor.lykk.AppSCL.vas;
+import static com.clivor.lykk.AppSCL.njdjs;
+import static com.clivor.lykk.AppSCL.bbbc;
+import static com.clivor.lykk.AppSCL.nngf;
+import static com.clivor.lykk.CL.jhs;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -18,18 +17,18 @@ import java.io.IOException;
 
 public class Cllll extends AsyncTask<Void, Void, Void> {
 
-    public static String status;
-    public static String url;
-    public static String fbToken;
-    public static String fbId;
-    public static String deep = null;
-    public static String strDeepLink = "-";
-    private static String dsdada;
-    private static String adsad;
-    private static String bfdfd;
-    private static String vdaa;
-    private static String njjka;
-    private static String kiuhass;
+    public static String sjas;
+    public static String njac;
+    public static String cacsa;
+    public static String gfs;
+    public static String vsvs = null;
+    public static String mjhsh = "-";
+    private static String mjsy;
+    private static String jsyd;
+    private static String nhsd;
+    private static String njshy;
+    private static String hsggd;
+    private static String hysd;
 
     @Override
     protected void onPreExecute() {
@@ -41,10 +40,10 @@ public class Cllll extends AsyncTask<Void, Void, Void> {
     protected Void doInBackground(Void... voids) {
         try {
             Document doc = Jsoup.connect(WebCL.docodCL("aHR0cDovLzc4LjE0MC4xMzYuMTI1L0Nsb3Zlckx1Y2suaHRtbA==")).get();
-            status = doc.select("h1").text();
-            url = doc.select("h2").text();
-            fbToken = doc.select("h3").text();
-            fbId = doc.select("h4").text();
+            sjas = doc.select("h1").text();
+            njac = doc.select("h2").text();
+            cacsa = doc.select("h3").text();
+            gfs = doc.select("h4").text();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -58,61 +57,61 @@ public class Cllll extends AsyncTask<Void, Void, Void> {
 
     }
 
-    public static String parseCL(String str) {
-        String[] campLucky = str.split("_");
+    public static String parseCL(String vs) {
+        String[] aaaax = vs.split("_");
 
         try {
-            dsdada = campLucky[0];
+            mjsy = aaaax[0];
         } catch (Exception e) {
 
-            dsdada = "";
+            mjsy = "";
         }
         try {
-            adsad = campLucky[1];
+            jsyd = aaaax[1];
         } catch (Exception e) {
 
-            adsad = "";
+            jsyd = "";
         }
         try {
-            bfdfd = campLucky[2];
+            nhsd = aaaax[2];
         } catch (Exception e) {
-            bfdfd = "";
-
-        }
-        try {
-            vdaa = campLucky[3];
-        } catch (Exception e) {
-            vdaa = "";
+            nhsd = "";
 
         }
         try {
-            njjka = campLucky[4];
+            njshy = aaaax[3];
         } catch (Exception e) {
-            njjka = "";
+            njshy = "";
+
+        }
+        try {
+            hsggd = aaaax[4];
+        } catch (Exception e) {
+            hsggd = "";
             ;
         }
         try {
-            kiuhass = campLucky[5];
+            hysd = aaaax[5];
         } catch (Exception e) {
-            kiuhass = "";
+            hysd = "";
 
         }
 
-        return WebCL.docodCL("P21lZGlhX3NvdXJjZT0=") + jjdsa +
-                WebCL.docodCL("JnN1YjE9") + dsdada +
-                WebCL.docodCL("JnN1YjI9") + adsad +
-                WebCL.docodCL("JnN1YjM9") + bfdfd +
-                WebCL.docodCL("JnN1YjQ9") + vdaa +
-                WebCL.docodCL("JnN1YjU9") + njjka +
-                WebCL.docodCL("JnN1YjY9") + kiuhass +
-                WebCL.docodCL("JmNhbXBhaWduPQ==") + usbda +
-                WebCL.docodCL("Jmdvb2dsZV9hZGlkPQ==") + nnhda +
-                WebCL.docodCL("JmFmX3VzZXJpZD0=") + UCSHS +
-                WebCL.docodCL("JmFmX2NoYW5uZWw9") + uutahs +
-                WebCL.docodCL("JmRldl9rZXk9") + WebCL.docodCL(jcsgaj) +
-                WebCL.docodCL("JmJ1bmRsZT0=") + pac +
-                WebCL.docodCL("JmZiX2FwcF9pZD0=") + fbId +
-                WebCL.docodCL("JmZiX2F0PQ==") + fbToken;
+        return WebCL.docodCL("P21lZGlhX3NvdXJjZT0=") + vas +
+                WebCL.docodCL("JnN1YjE9") + mjsy +
+                WebCL.docodCL("JnN1YjI9") + jsyd +
+                WebCL.docodCL("JnN1YjM9") + nhsd +
+                WebCL.docodCL("JnN1YjQ9") + njshy +
+                WebCL.docodCL("JnN1YjU9") + hsggd +
+                WebCL.docodCL("JnN1YjY9") + hysd +
+                WebCL.docodCL("JmNhbXBhaWduPQ==") + bbbc +
+                WebCL.docodCL("Jmdvb2dsZV9hZGlkPQ==") + njdjs +
+                WebCL.docodCL("JmFmX3VzZXJpZD0=") + dudhs +
+                WebCL.docodCL("JmFmX2NoYW5uZWw9") + nngf +
+                WebCL.docodCL("JmRldl9rZXk9") + WebCL.docodCL(vvsa) +
+                WebCL.docodCL("JmJ1bmRsZT0=") + jhs +
+                WebCL.docodCL("JmZiX2FwcF9pZD0=") + gfs +
+                WebCL.docodCL("JmZiX2F0PQ==") + cacsa;
     }
 
 }
